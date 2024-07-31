@@ -26,6 +26,10 @@
       }
     </script>
     <style>
+      .item > .fa-solid {
+        display: none;
+      }
+
       #br {
         display: none;
       }
@@ -41,11 +45,11 @@
       body {
         font-family: 'Mulish', sans-serif;
         margin: 0;
-        background-color: #fbf9f6;
+        background-color: #ffffff;
         padding-bottom: 10vh;
       }
       header {
-        background-color: #d9e2e9;
+        background-color: #ffffff;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -61,28 +65,28 @@
         text-align: center;
         font-family: sans-serif;
         font-size: 8vw;
-        color: #222222;
+        color: #000000;
       }
       p {
         font-size: 5.5vw;
-        color: #222222;
+        color: #000000;
         margin: auto;
         text-align: center;
         font-family: 'Mulish', sans-serif;
       }
       span {
-        color: #222222;
+        color: #000000;
         text-align: center;
       }
       a {
-        color: #222222;
+        color: #000000;
         text-decoration: none;
         word-break: break-all;
       }
       .text {
         font-size: 4vw;
         display: inline;
-        color: #222222;
+        color: #000000;
       }
       .bold {
         font-weight: 900;
@@ -100,14 +104,14 @@
       li {
         font-family: 'Mulish', sans-serif;
         font-size: 4vw;
-        color: #222222;
+        color: #000000;
       }
       .box {
         margin-top: 1%;
         margin-bottom: 3%;
         width: 100%;
         height: min(6px, 1vw);
-        background-color: #2f3556;
+        background-color: #000000;
       }
       .br {
         height: 2vw;
@@ -126,7 +130,7 @@
         border-radius: 1vw;
       }
       .fill::after {
-        background-color: #2f3556;
+        background-color: #000000;
       }
       .fa-solid {
         position: relative;
@@ -144,7 +148,7 @@
         font-size: 3.5vw;
         left: 1vw;
         bottom: -2px;
-        color: #222222;
+        color: #000000;
       }
       @media (max-width: 992px) {
         #span {
@@ -288,7 +292,7 @@
         }
 
         body {
-          background-color: #f0eeeb;
+          background-color: #e3f5ff;
         }
 
         header {
@@ -358,19 +362,19 @@
           <p>Software Engineering Student</p>
           <div id="headerInfo">
             <span id="span">
-              <div><i class="fa-solid fa-envelope" style="color: #2f3556;"></i> <a href="mailto:dimitrijezdravkovic20@gmail.com">dimitrijezdravkovic20@gmail.com</a></div>
-              <div><i class="fa-solid fa-phone" style="color: #2f3556;"></i> <a href="tel:+381648938904">+381648938904</a></div>
+              <div><i class="fa-solid fa-envelope" style="color: #000000;"></i> <a href="mailto:dimitrijezdravkovic20@gmail.com">dimitrijezdravkovic20@gmail.com</a></div>
+              <div><i class="fa-solid fa-phone" style="color: #000000;"></i> <a href="tel:+381648938904">+381648938904</a></div>
               <div>
-                <i class="fa-solid fa-location-dot" style="color: #2f3556;"></i> Belgrade, Serbia
+                <i class="fa-solid fa-location-dot" style="color: #000000;"></i> Belgrade, Serbia
                 <br id="br">
-                <i class="fa-solid fa-user" style="color: #2f3556;"></i> Male
+                <i class="fa-solid fa-user" style="color: #000000;"></i> Male
               <div>
               <div>
-                <i class="fa-solid fa-brands fa-linkedin-in" style="color: #2f3556;"></i> <a href="https://www.linkedin.com/in/zdravkovic-dimitrije" target="_blank">LinkedIn</a>
-                <i class="fa-solid fa-brands fa-github" style="color: #2f3556;"></i> <a href="https://github.com/ZdravDim" target="_blank">GitHub</a>
+                <i class="fa-solid fa-brands fa-linkedin-in" style="color: #000000;"></i> <a href="https://www.linkedin.com/in/zdravkovic-dimitrije" target="_blank">LinkedIn</a>
+                <i class="fa-solid fa-brands fa-github" style="color: #000000;"></i> <a href="https://github.com/ZdravDim" target="_blank">GitHub</a>
               </div>
               <div>
-                <i class="fa-solid fa-arrow-pointer" style="color: #2f3556;"></i> <a href="https://zdravdim.github.io" target="_blank">CV page</a>
+                <i class="fa-solid fa-arrow-pointer" style="color: #000000;"></i> <a href="https://zdravdim.github.io" target="_blank">CV page</a>
               </div>
             </span>
           </div>
@@ -379,7 +383,7 @@
       <div class="wrap">
         <div class="split left">
           <div class="item">
-            <i class="fa-solid fa-graduation-cap fa-xl" style="color: #222222; margin-left: 0;"></i> <p class="text bold heading">Education</p>
+            <i class="fa-solid fa-graduation-cap fa-xl" style="color: #000000; margin-left: 0;"></i> <p class="text bold heading">Education</p>
             <div class="box">&nbsp;</div>
 
             <p class="text bold">Software engineering,<br>School of Electrical Engineering</p>
@@ -398,7 +402,7 @@
 
           </div>
           <div class="item">
-            <i class="fa-solid fa-brain fa-xl" style="color: #222222; margin-left: 0;"></i> <p class="text bold heading">Skills</p>
+            <i class="fa-solid fa-brain fa-xl" style="color: #000000; margin-left: 0;"></i> <p class="text bold heading">Skills</p>
             <div class="box">&nbsp;</div>
 
             <p class="text bold circle">Java</p>
@@ -406,6 +410,8 @@
             <span class="circle fill"></span>
             <span class="circle fill"></span>
             <span class="circle fill"></span>
+            <br>
+            <p class="text">AWT</p>
 
             <div class="br"></div>
 
@@ -414,6 +420,8 @@
             <span class="circle fill"></span>
             <span class="circle fill"></span>
             <span class="circle fill"></span>
+            <br>
+            <p class="text">Pandas, Numpy, Matplotlib</p>
 
             <div class="br"></div>
 
@@ -431,7 +439,7 @@
             <span class="circle fill"></span>
             <span class="circle fill"></span>
             <br>
-            <p class="text">MySQL, SQLite</p>
+            <p class="text">MySQL, SQLite, PostgreSQL</p>
 
             <div class="br"></div>
 
@@ -440,6 +448,8 @@
             <span class="circle fill"></span>
             <span class="circle fill"></span>
             <span class="circle fill"></span>
+            <br>
+            <p class="text">Collaborative Git usage</p>
 
             <div class="br"></div>
 
@@ -483,18 +493,22 @@
             <span class="circle fill"></span>
             <span class="circle fill"></span>
             <br>
-            <p class="text">Express.js</p>
+            <p class="text">Express.js, Gulp.js</p>
+            
+            <div class="br"></div>
+
+            <p class="text bold circle">TypeScript</p>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
 
           </div>
           <div class="item">
-            <i class="fa-solid fa-book fa-xl" style="color: #222222; margin-left: 0;"></i> <p class="text bold heading">Familiar with</p>
+            <i class="fa-solid fa-book fa-xl" style="color: #000000; margin-left: 0;"></i> <p class="text bold heading">Familiar with</p>
             <div class="box">&nbsp;</div>
 
             <p class="text bold">React</p>
-
-            <div class="br"></div>
-
-            <p class="text bold">TypeScript</p>
 
             <div class="br"></div>
 
@@ -515,35 +529,53 @@
             <p class="text bold">PHP</p>
             
           </div>
+
           <div class="item">
-            <i class="fa-solid fa-certificate fa-xl" style="color: #222222; margin-left: 0;"></i> <p class="text bold heading">Certificates</p>
+            <i class="fa-solid fa-earth-americas fa-xl" style="color: #000000; margin-left: 0;"></i> <p class="text bold heading">Languages</p>
             <div class="box">&nbsp;</div>
             <ul>
-              <li><a class="text" href="https://raw.githubusercontent.com/ZdravDim/ZdravDim.github.io/main/Database%20Foundations%20Oracle.pdf" target="_blank">Database Foundations, Oracle<i class="fa-solid fa-paperclip fa-2xs clipper"></i></a></li>
+
+              <li>
+                <p class="text circle fill">Serbian - native</p>
+                <span class="circle fill"></span>
+                <span class="circle fill"></span>
+                <span class="circle fill"></span>
+                <span class="circle fill"></span>
+              </li>
+
               <br>
-              <li><a class="text" href="https://raw.githubusercontent.com/ZdravDim/ZdravDim.github.io/main/IT%20Team%20Active%20Member%20GDSC.pdf" target="_blank">IT Team Active Member, Google Developer Student Club<i class="fa-solid fa-paperclip fa-2xs clipper"></i></a></li>
-              <br>
-              <li><a class="text" href="https://raw.githubusercontent.com/ZdravDim/ZdravDim.github.io/main/Flutter%20School%20GDSC.pdf" target="_blank">Flutter School, Google Developer Student Club<i class="fa-solid fa-paperclip fa-2xs clipper"></i></a></li>
+
+              <li>
+                <p class="text circle">English</p>
+                <span class="circle fill"></span>
+                <span class="circle fill"></span>
+                <span class="circle fill"></span>
+                <span class="circle fill"></span>
+              </li>
+
             </ul>
           </div>
+
         </div>
         <div class="split right">
+          <!--
           <div class="item" style="text-align: justify;">
-            <i class="fa-solid fa-address-card fa-xl" style="color: #222222; margin-left: 0;"></i> <p class="text bold heading">Profile</p>
+            <i class="fa-solid fa-address-card fa-xl" style="color: #000000; margin-left: 0;"></i> <p class="text bold heading">Profile</p>
             <div class="box">&nbsp;</div>
             <p class="text profile">I am a student from Kraljevo, enrolled in the
               School of Electrical Engineering at the University
               of Belgrade.</p>
           </div>
+          -->
           <div class="item">
-            <i class="fa-solid fa-briefcase fa-xl" style="color: #222222; margin-left: 0;"></i> <p class="text bold heading">Experience</p>
+            <i class="fa-solid fa-briefcase fa-xl" style="color: #000000; margin-left: 0;"></i> <p class="text bold heading">Experience</p>
             <div class="box">&nbsp;</div>
 
             <p class="text bold">Microsoft, Software Engineering Intern</p>
             <br>
             <p class="text">July 2024 - October 2024 | Belgrade, Serbia</p>
             <ul style="margin-top: 10px;">
-              <li>Full time Internship</li>
+              <li>Full time Internship, on-site</li>
             </ul>
 
             <div class="br"></div>
@@ -564,10 +596,10 @@
           </div>
 
           <div class="item">
-            <i class="fa-solid fa-folder-open fa-xl" style="color: #222222; margin-left: 0;"></i> <p class="text bold heading">Projects</p>
+            <i class="fa-solid fa-folder-open fa-xl" style="color: #000000; margin-left: 0;"></i> <p class="text bold heading">Projects</p>
             <div class="box">&nbsp;</div>
 
-            <a class="text bold" href="https://github.com/ZdravDim/Multithreaded-kernel" target="_blank">Multithreaded kernel<i class="fa-solid fa-paperclip fa-2xs clipper"></i></a>
+            <a class="text bold" href="https://github.com/ZdravDim/Multithreaded-kernel" target="_blank">Multithreaded kernel, written in C & C++<i class="fa-solid fa-paperclip fa-2xs clipper"></i></a>
             <br>
             <p class="text">2024</p>
             <ul style="margin-top: 10px;">
@@ -593,7 +625,7 @@
 
             <div class="br"></div>
 
-            <a class="text bold" href="https://github.com/ZdravDim/ita-soccer-league-compass-front" target="_blank">Website front, Angular<i class="fa-solid fa-paperclip fa-2xs clipper"></i></a>
+            <a class="text bold" href="https://github.com/ZdravDim/ita-soccer-league-compass-front" target="_blank">Soccer League Website, Angular<i class="fa-solid fa-paperclip fa-2xs clipper"></i></a>
             <br>
             <p class="text">2023</p>
             <ul style="margin-top: 10px;">
@@ -607,7 +639,7 @@
             <br>
             <p class="text">2023</p>
             <ul style="margin-top: 10px;">
-              <li>RESTful API reated with Express.js, tested with Mocha</li>
+              <li>REST API created with Express.js + Mocha</li>
               <li>In-memory database</li>
             </ul>
 
@@ -621,31 +653,19 @@
             </ul>
 
           </div>
+
           <div class="item">
-            <i class="fa-solid fa-earth-americas fa-xl" style="color: #222222; margin-left: 0;"></i> <p class="text bold heading">Languages</p>
+            <i class="fa-solid fa-certificate fa-xl" style="color: #000000; margin-left: 0;"></i> <p class="text bold heading">Certificates</p>
             <div class="box">&nbsp;</div>
             <ul>
-
-              <li>
-                <p class="text circle fill">Serbian - native</p>
-                <span class="circle fill"></span>
-                <span class="circle fill"></span>
-                <span class="circle fill"></span>
-                <span class="circle fill"></span>
-              </li>
-
+              <li><a class="text" href="https://raw.githubusercontent.com/ZdravDim/ZdravDim.github.io/main/Database%20Foundations%20Oracle.pdf" target="_blank">Database Foundations, Oracle<i class="fa-solid fa-paperclip fa-2xs clipper"></i></a></li>
               <br>
-
-              <li>
-                <p class="text circle">English</p>
-                <span class="circle fill"></span>
-                <span class="circle fill"></span>
-                <span class="circle fill"></span>
-                <span class="circle fill"></span>
-              </li>
-
+              <li><a class="text" href="https://raw.githubusercontent.com/ZdravDim/ZdravDim.github.io/main/IT%20Team%20Active%20Member%20GDSC.pdf" target="_blank">IT Team Active Member, Google Developer Student Club<i class="fa-solid fa-paperclip fa-2xs clipper"></i></a></li>
+              <br>
+              <li><a class="text" href="https://raw.githubusercontent.com/ZdravDim/ZdravDim.github.io/main/Flutter%20School%20GDSC.pdf" target="_blank">Flutter School, Google Developer Student Club<i class="fa-solid fa-paperclip fa-2xs clipper"></i></a></li>
             </ul>
           </div>
+
         </div>
       </div>
     </div>
