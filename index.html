@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zdravkovic Dimitrije CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/2758d855c0.js" crossorigin="anonymous"></script>
+    <script>
+      function downloadURI() {
+        fetch("https://raw.githubusercontent.com/ZdravDim/zdravdim.github.io/main/Zdravkovic%20Dimitrije%20CV.pdf", { method: 'get', referrerPolicy: 'no-referrer' })
+        .then(res => res.blob())
+        .then(res => {
+          const aElement = document.createElement('a');
+          aElement.setAttribute('download', "Zdravkovic Dimitrije CV.pdf");
+          const href = URL.createObjectURL(res);
+          aElement.href = href;
+          aElement.setAttribute('target', '_blank');
+          aElement.click();
+          URL.revokeObjectURL(href);
+        });
+      }
+    </script>
+    <style>
+      /* .item > .fa-solid {
+        display: none;
+      } */
+
+      #br {
+        display: none;
+      }
+
+      #image {
+        display: none;
+      }
+
+      #download {
+        display: none;
+      }
+
+      body {
+        font-family: 'Mulish', sans-serif;
+        margin: 0;
+        background-color: #ffffff;
+        padding-bottom: 10vh;
+      }
+      header {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 40px;
+      }
+      #headerInfo {
+        margin-top: 10px;
+        text-align: center;
+        padding-bottom: 50px;
+      }
+      h1 {
+        margin: auto;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 8vw;
+        color: #000000;
+      }
+      p {
+        font-size: 5.5vw;
+        color: #000000;
+        margin: auto;
+        text-align: center;
+        font-family: 'Mulish', sans-serif;
+      }
+      span {
+        color: #000000;
+        text-align: center;
+      }
+      a {
+        color: #000000;
+        text-decoration: none;
+        word-break: break-all;
+      }
+      .text {
+        font-size: 4vw;
+        display: inline;
+        color: #000000;
+      }
+      .bold {
+        font-weight: 900;
+        font-size: min(50vh, 4.2vw);
+      }
+      .item {
+        padding-left: 10%;
+        padding-top: 10%;
+        padding-right: 10%;
+      }
+      ul {
+        list-style-position: inside;
+        padding-left: 0;
+      }
+      li {
+        font-family: 'Mulish', sans-serif;
+        font-size: 4vw;
+        color: #000000;
+      }
+      .box {
+        margin-top: 1%;
+        margin-bottom: 3%;
+        width: 100%;
+        height: min(6px, 1vw);
+        background-color: #000000;
+      }
+      .br {
+        height: 2vw;
+      }
+      .circle::after {
+        display: none !important;
+        content: "";
+        float: right;
+        background-color: #e0e1e6;
+        margin-top: calc(11.5px - 1vw);
+        margin-right: 1.3vw;
+        width: 2vw;
+        height: 2vw;
+        -moz-border-radius: 1vw;
+        -webkit-border-radius: 1vw;
+        border-radius: 1vw;
+      }
+      .fill::after {
+        background-color: #000000;
+      }
+      .fa-solid {
+        position: relative;
+        font-size: 5vw;
+        bottom: 0.3vw;
+      }
+      #span div .fa-solid {
+        bottom: 0;
+      }
+      .heading {
+        font-size: 5vw;
+      }
+      .clipper {
+        display: inline;
+        font-size: 3.5vw;
+        left: 1vw;
+        bottom: -2px;
+        color: #000000;
+      }
+      @media (max-width: 992px) {
+        #span {
+          font-size: 4.5vw;
+        }
+        #span div {
+          margin-top: 1vw;
+        }
+      }
+      @media (min-width: 400px) {
+        .circle::after {
+          margin-top: 2vw;
+        }
+      }
+      @media (min-width: 992px) {
+        p.text.bold.heading {
+          margin-left: 10px;
+        }
+        .circle {
+          font-size: 0;
+        }
+        #span div {
+          padding-bottom: 10px;
+        }
+        body {
+          padding-bottom: 80px;
+        }
+        .circle::after {
+          margin-top: 2.5%;
+          margin-right: min(6vh, 0.8vw);
+          width: 1vw;
+          height: 1vw;
+          -moz-border-radius: 0.5vw;
+          -webkit-border-radius: 0.5vw;
+          border-radius: 0.5vw;
+        }
+        h1 {
+          font-size: 70px;
+        }
+        .text, li, .profile {
+          font-size: min(60vh, 2vw);
+        }
+        span {
+          font-size: 42px;
+        }
+        .fa-solid {
+          margin-left: 20px;
+          font-size: 30px;
+        }
+        .heading {
+          font-size: 25px;
+        }
+        span .fa-solid {
+          font-size: 35px;
+        }
+        .split.left {
+          width: 46%;
+        }
+        .split.right {
+          width: 54%;
+        }
+        .wrap {
+          width: 100%;
+          display: flex;
+        }
+        .left {
+          padding-left: 10%;
+          flex-direction: column;
+        }
+        .right {
+          padding-left: 0%;
+          flex-direction: column;
+        }
+        .item {
+          padding-left: 0;
+          padding-top: 50px;
+          padding-right: 20%;
+        }
+        .left .item {
+          padding-right: 10%;
+        }
+        .box {
+          height: 4px;
+        }
+        p {
+          font-size: 45px;
+        }
+        .br {
+          height: 30px;
+        }
+        .clipper {
+          font-size: 1.5vw;
+          left: -12px;
+        }
+      }
+
+      @keyframes imageShow {
+          from { filter: grayscale(0%); }
+          to { filter: grayscale(70%); scale: 1.03; }
+      }
+
+      @media (min-width: 1500px) {
+        #br {
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        #image {
+          display: inline;
+          position: absolute;
+          left: 30px;
+          top: 30px;
+          filter: grayscale(0%);
+          border-radius: 50%;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        img:hover {
+            animation-name: imageShow;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        #download {
+          display: inline-block;
+          position: absolute;
+          top: 75px;
+          right: 50px;
+          color: white;
+          background-color: #2f3556;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          padding-left: 30px;
+          padding-right: 30px;
+          border-radius: 5px;
+        }
+
+        #download:hover {
+          background-color: #3b426b;
+          cursor: pointer;
+        }
+
+        body {
+          background-color: #e3f5ff;
+        }
+
+        header {
+          padding-top: 80px;
+          padding-bottom: 40px;
+        }
+
+        #body-div {
+          max-width: 2300px;
+          margin: 0 auto;
+          margin-bottom: -500px;
+          background-color: white;
+          padding-bottom: 70px;
+          transform: scale(0.65);
+          transform-origin: 50% 350px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        .box {
+          height: 5px;
+        }
+        #span div {
+          display: inline;
+        }
+        .circle::after {
+          margin-top: 10px;
+          margin-right: 15px;
+          width: 16px;
+          height: 16px;
+          -moz-border-radius: 10px;
+          -webkit-border-radius: 10px;
+          border-radius: 10px;
+        }
+        span .fa-solid {
+          font-size: 30px;
+          top: 2px;
+        }
+        .text, li {
+          font-size: 25px;
+        }
+        span {
+          font-size: 30px;
+        }
+        .fa-solid {
+          font-size: 30px;
+          bottom: 5px;
+        }
+        .heading {
+          font-size: 30px;
+        }
+        .clipper {
+          display: inline;
+          font-size: 20px;
+          left: -10px;
+          bottom: -2px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img id="image" src="1.jpg" height="150px" width="150px">
+    <!-- <a id="download" onclick="downloadURI()"> Download </a> -->
+    <div id="body-div">
+      <header>
+        <div>
+          <h1>Dimitrije Zdravkovic</h1>
+          <p>Software Engineering Student</p>
+          <div id="headerInfo">
+            <span id="span">
+              <div><i class="fa-solid fa-envelope" style="color: #000000;"></i> <a href="mailto:dimitrijezdravkovic20@gmail.com">dimitrijezdravkovic20@gmail.com</a></div>
+              <div>
+                <i class="fa-solid fa-location-dot" style="color: #000000;"></i> Belgrade, Serbia
+                <br id="br">
+                <i class="fa-solid fa-user" style="color: #000000;"></i> Male
+              <div>
+              <div>
+                <i class="fa-solid fa-brands fa-linkedin-in" style="color: #000000;"></i> <a href="https://www.linkedin.com/in/zdravkovic-dimitrije" target="_blank">LinkedIn</a>
+                <i class="fa-solid fa-brands fa-github" style="color: #000000;"></i> <a href="https://github.com/ZdravDim" target="_blank">GitHub</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-arrow-pointer" style="color: #000000;"></i> <a href="https://zdravdim.github.io" target="_blank">CV page</a>
+              </div>
+            </span>
+          </div>
+        </div>
+      </header>
+      <div class="wrap">
+        <div class="split left">
+          <div class="item">
+            <i class="fa-solid fa-graduation-cap fa-xl" style="color: #000000; margin-left: 0;"></i> <p class="text bold heading">Education</p>
+            <div class="box">&nbsp;</div>
+
+            <p class="text bold">Software engineering,<br>School of Electrical Engineering</p>
+            <br>
+            <p class="text">2022 - present | Belgrade, Serbia</p>
+            <br>
+            <p class="text">GPA - 9.00 / 10.0</p>
+
+          </div>
+          <div class="item">
+            <i class="fa-solid fa-brain fa-xl" style="color: #000000; margin-left: 0;"></i> <p class="text bold heading">Skills</p>
+            <div class="box">&nbsp;</div>
+
+            <p class="text bold circle">Java</p>
+            <span class="circle"></span>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <br>
+            <p class="text">AWT</p>
+
+            <div class="br"></div>
+
+            <p class="text bold circle">Python</p>
+            <span class="circle"></span>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <br>
+            <p class="text">Pandas, Numpy, Matplotlib</p>
+
+            <div class="br"></div>
+
+            <p class="text bold circle">C/C++</p>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+
+            <div class="br"></div>
+
+            <p class="text bold circle">SQL</p>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <br>
+            <p class="text">MySQL, SQLite, PostgreSQL</p>
+
+            <div class="br"></div>
+
+            <p class="text bold circle">Git</p>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <br>
+            <p class="text">Collaborative Git usage</p>
+
+            <div class="br"></div>
+
+            <p class="text bold circle">Data Structures and Algorithms</p>
+            <span class="circle"></span>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+
+            <div class="br"></div>
+
+            <p class="text bold circle">Operating Systems</p>
+            <span class="circle"></span>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+
+            <div class="br"></div>
+
+            <p class="text bold circle">Docker</p>
+            <span class="circle"></span>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+
+            <div class="br"></div>
+
+            <p class="text bold circle">HTML, CSS, JavaScript, Angular</p>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <br>
+            <p class="text">Bootstrap</p>
+
+            <div class="br"></div>
+
+            <p class="text bold circle">Node.js, TypeScript</p>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <span class="circle fill"></span>
+            <br>
+            <p class="text">Express.js, Gulp.js</p>
+
+          </div>
+          <div class="item">
+            <i class="fa-solid fa-book fa-xl" style="color: #000000; margin-left: 0;"></i> <p class="text bold heading">Familiar with</p>
+            <div class="box">&nbsp;</div>
+
+            <p class="text bold">React, Flutter</p>
+
+            <div class="br"></div>
+
+            <p class="text bold">Cloud Computing</p>
+
+            <div class="br"></div>
+
+            <p class="text bold">C#, PHP</p>
+
+            <div class="br"></div>
+
+            <p class="text bold">Computer Networks</p>
+
+            <div class="br"></div>
+
+            <p class="text bold">Automated testing</p>
+            <br>
+            <p class="text">Unit testing, Integration testing</p>
+
+            <div class="br"></div>
+
+            <p class="text bold">Bash scripting</p>
+
+            <div class="br"></div>
+
+            <p class="text bold">CI/CD</p>
+
+            <div class="br"></div>
+
+            <p class="text bold">Machine Learning</p>
+            
+          </div>
+
+          <div class="item">
+            <i class="fa-solid fa-earth-americas fa-xl" style="color: #000000; margin-left: 0;"></i> <p class="text bold heading">Languages</p>
+            <div class="box">&nbsp;</div>
+            <ul>
+
+              <li>
+                <p class="text circle fill">Serbian - native</p>
+                <span class="circle fill"></span>
+                <span class="circle fill"></span>
+                <span class="circle fill"></span>
+                <span class="circle fill"></span>
+              </li>
+
+              <br>
+
+              <li>
+                <p class="text circle">English</p>
+                <span class="circle fill"></span>
+                <span class="circle fill"></span>
+                <span class="circle fill"></span>
+                <span class="circle fill"></span>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+        <div class="split right">
+
+          <div class="item">
+            <i class="fa-solid fa-briefcase fa-xl" style="color: #000000; margin-left: 0;"></i> <p class="text bold heading">Experience</p>
+            <div class="box">&nbsp;</div>
+
+            <p class="text bold">Microsoft, Software Engineering Intern</p>
+            <br>
+            <p class="text">July 2024 - October 2024 | Belgrade, Serbia</p>
+            <ul style="margin-top: 10px;">
+              <li>Full time Internship, on-site</li>
+            </ul>
+          </div>
+
+          <div class="item">
+
+            <i class="fa-solid fa-code fa-xl" style="color: #000000; margin-left: 0;"></i> <p class="text bold heading">Hackathons</p>
+            <div class="box">&nbsp;</div>
+
+            <a class="text bold" href="https://github.com/ZdravDim/Digihack-2024" target="_blank">Fon Digital & Informatika, Digihack<i class="fa-solid fa-paperclip fa-2xs clipper"></i></a>
+            <br>
+            <p class="text">2024 | Belgrade, Serbia</p>
+            <ul style="margin-top: 10px;">
+              <li>Digital twin, Artificial intelligence</li>
+              <li>Smart company</li>
+            </ul>
+
+            <div class="br"></div>
+
+            <a class="text bold" href="https://github.com/ZdravDim/IBM-Hackathon-2024" target="_blank">IBM, TechXchange<i class="fa-solid fa-paperclip fa-2xs clipper"></i></a>
+            <br>
+            <p class="text">2024 | Remote</p>
+            <ul style="margin-top: 10px;">
+              <li>AI Attorney backed by watsonx.ai</li>
+              <li>Prompt engineering</li>
+            </ul>
+
+            <div class="br"></div>
+
+            <p class="text bold">Microsoft, Global Hackathon</p>
+            <br>
+            <p class="text">2024 | Belgrade, Serbia</p>
+            <ul style="margin-top: 10px;">
+              <li>Learning about Neural Networks</li>
+            </ul>
+
+            <div class="br"></div>
+
+            <p class="text bold">Levi9, 5 Days in the Cloud - 2nd place</p>
+            <br>
+            <p class="text">2023 | Belgrade</p>
+            <ul style="margin-top: 10px;">
+              <li>Migrating Node.js app to AWS</li>
+              <li>API Gateway, Lambda, S3, SQS, DynamoDB</li>
+            </ul>
+
+            <div class="br"></div>
+
+            <a class="text bold" href="https://github.com/ZdravDim/ImaNaCirilici_2023" target="_blank">РНИДС & Quantox, "Има на ћирилици"<i class="fa-solid fa-paperclip fa-2xs clipper"></i></a>
+            <br>
+            <p class="text">2024 | Remote</p>
+            <ul style="margin-top: 10px;">
+              <li>Website promoting cyrilic script</li>
+              <li>Angular, Spring, MySQL</li>
+            </ul>
+
+          </div>
+
+          <div class="item">
+            <i class="fa-solid fa-folder-open fa-xl" style="color: #000000; margin-left: 0;"></i> <p class="text bold heading">Projects</p>
+            <div class="box">&nbsp;</div>
+
+            <a class="text bold" href="https://github.com/ZdravDim/Multithreaded-kernel" target="_blank">Multithreaded kernel, written in C & C++<i class="fa-solid fa-paperclip fa-2xs clipper"></i></a>
+            <br>
+            <p class="text">2024</p>
+            <ul style="margin-top: 10px;">
+              <li>Memory and thread managment</li>
+              <li>Thread synchronization</li>
+              <li>Time-sharing, Preemption</li>
+            </ul>
+
+            <div class="br"></div>
+
+            <a class="text bold" href="https://github.com/ZdravDim/Chat-App-Front-Web" target="_blank">Multi-Room Chat App, React + Node.js + Firebase<i class="fa-solid fa-paperclip fa-2xs clipper"></i></a>
+            <br>
+            <p class="text">2024</p>
+            <ul style="margin-top: 10px;">
+              <li><a class="text bold" href="https://github.com/ZdravDim/Chat-App-Backend" target="_blank">Backend-link<i class="fa-solid fa-paperclip fa-2xs clipper"></i></a></li>
+              <li>Phone auth using Firebase</li>
+              <li>JWT authentication</li>
+              <li>WebSockets using Socket.IO library</li>
+              <li>NoSQL document database - Firestore</li>
+            </ul>
+
+
+            <div class="br"></div>
+
+            <a class="text bold" href="https://github.com/ZdravDim/ita-soccer-league-compass-front" target="_blank">Soccer League Website, Angular<i class="fa-solid fa-paperclip fa-2xs clipper"></i></a>
+            <br>
+            <p class="text">2023</p>
+            <ul style="margin-top: 10px;">
+              <li>Responsive SPA, SEO</li>
+            </ul>
+
+            <div class="br"></div>
+
+            <a class="text bold" href="https://play.google.com/store/apps/details?id=com.ZDSoftware.SpinScore&hl=en&gl=US&pli=1" target="_blank">Android mobile game, Unity<i class="fa-solid fa-paperclip fa-2xs clipper"></i></a>
+            <br>
+            <p class="text">2022</p>
+            <ul style="margin-top: 10px;">
+              <li>2D ball game written in C#</li>
+            </ul>
+
+          </div>
+
+          <div class="item">
+            <i class="fa-solid fa-certificate fa-xl" style="color: #000000; margin-left: 0;"></i> <p class="text bold heading">Certificates</p>
+            <div class="box">&nbsp;</div>
+            <ul>
+              <li><a class="text" href="https://raw.githubusercontent.com/ZdravDim/ZdravDim.github.io/main/Database%20Foundations%20Oracle.pdf" target="_blank">Database Foundations, Oracle<i class="fa-solid fa-paperclip fa-2xs clipper"></i></a></li>
+              <br>
+              <li><a class="text" href="https://raw.githubusercontent.com/ZdravDim/ZdravDim.github.io/main/IT%20Team%20Active%20Member%20GDSC.pdf" target="_blank">IT Team Active Member, Google Developer Student Club<i class="fa-solid fa-paperclip fa-2xs clipper"></i></a></li>
+              <br>
+              <li><a class="text" href="https://raw.githubusercontent.com/ZdravDim/ZdravDim.github.io/main/Flutter%20School%20GDSC.pdf" target="_blank">Flutter School, Google Developer Student Club<i class="fa-solid fa-paperclip fa-2xs clipper"></i></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
